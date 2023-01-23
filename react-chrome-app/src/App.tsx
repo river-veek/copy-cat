@@ -1,10 +1,8 @@
-import React from 'react';
-
 function App() {
   return (
-    <div className="App">
+    <div>
       <header>
-        <h2>Copy-Cat</h2>
+        <h5>Hello From React App</h5>
       </header>
     </div>
   );

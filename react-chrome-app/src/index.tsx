@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // create root element
 const rootElement = document.createElement("div");
 rootElement.id = "react-chrome-app";
-document.body.appendChild(rootElement);
 
 // create style element
 const globalStyles = document.createElement("style");
@@ -23,7 +21,17 @@ globalStyles.innerHTML = `
   z-index: 999;
   }
 `;
-rootElement.appendChild(globalStyles);
+var head = document.head || document.getElementsByTagName('head')[0];
+document.head.appendChild(globalStyles);
+
+/*
+// set style attribute for root element (alternative way)
+rootElement.setAttribute(
+  "style", 
+  "position: fixed;left: 0;top: 0;width: 300px;height: 100vh;background: #ffffff;border-right: 1px solid #c2c2c2;z-index: 999;"
+  )
+*/
+
 document.body.appendChild(rootElement);
 
 // render root element
