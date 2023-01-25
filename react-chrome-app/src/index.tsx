@@ -8,8 +8,9 @@ const rootElement = document.createElement("div");
 rootElement.id = "react-chrome-app";
 
 // create style element
-const globalStyles = document.createElement("style");
-globalStyles.innerHTML = `
+const style = document.createElement("style");
+const globalStylesTextNode = document.createTextNode(
+  `
   #${rootElement.id} {
   position: fixed;
   left: 0;
@@ -20,9 +21,11 @@ globalStyles.innerHTML = `
   border-right: 1px solid #c2c2c2;
   z-index: 999;
   }
-`;
+`
+);
+style.appendChild(globalStylesTextNode);
 var head = document.head || document.getElementsByTagName('head')[0];
-document.head.appendChild(globalStyles);
+document.head.appendChild(style);
 
 /*
 // set style attribute for root element (alternative way)
