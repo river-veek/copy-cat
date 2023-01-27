@@ -10,6 +10,9 @@
         ]
       }
     ],
+    "action": {
+      "default_popup": "popup.html"
+    },
   
     "description": "The ultimate copy/paste enhancer",
   

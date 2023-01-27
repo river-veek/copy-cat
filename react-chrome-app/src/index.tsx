@@ -13,10 +13,10 @@ const globalStylesTextNode = document.createTextNode(
   `
   #${rootElement.id} {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 300px;
-  height: 100vh;
+  left: 100px;
+  top: 100px;
+  width: 100px;
+  height: 100px;
   background: #ffffff;
   border-right: 1px solid #c2c2c2;
   z-index: 999;
@@ -25,7 +25,7 @@ const globalStylesTextNode = document.createTextNode(
 );
 style.appendChild(globalStylesTextNode);
 var head = document.head || document.getElementsByTagName('head')[0];
-document.head.appendChild(style);
+head.appendChild(style);
 
 /*
 // set style attribute for root element (alternative way)
