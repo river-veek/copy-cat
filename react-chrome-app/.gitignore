@@ -10,7 +10,9 @@
 
 # production
 /build
-*content.js
+/../extension/*content.js
+/../*.txt
+
 
 # misc
 .DS_Store

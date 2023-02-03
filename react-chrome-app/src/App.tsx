@@ -1,7 +1,9 @@
+import Paste from "./Paste";
+
 function App() {
-  return (
+   return (
     <div>
-      <select id="copies"></select>
+      
     </div>
   );
 }

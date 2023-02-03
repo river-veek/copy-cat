@@ -15,10 +15,10 @@ const globalStylesTextNode = document.createTextNode(
   position: fixed;
   left: 100px;
   top: 100px;
-  width: 100px;
-  height: 100px;
+  width: 25px;
+  height: 25px;
   background: #ffffff;
-  border-right: 1px solid #c2c2c2;
+  border-right: 3px solid #c2c2c2;
   z-index: 999;
   }
 `
