@@ -18,6 +18,14 @@
       "clipboardRead",
       "clipboardWrite"
     ],
+    "commands": {
+      "paste": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+V"
+        },
+        "description": "Toggle enhanced paste"
+      }
+    },
   
     "description": "The ultimate copy/paste enhancer",
   
